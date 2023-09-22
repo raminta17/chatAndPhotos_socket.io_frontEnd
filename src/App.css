@@ -62,8 +62,8 @@ body {
     font-style: italic;
 }
 .inputs {
-    /*margin: 5px;*/
     display: flex;
+    align-items: center;
 }
 .inputs button:hover {
     background-color: #8a8888;
@@ -96,10 +96,15 @@ button {
 .photoBox {
     width: 150px;
     height: 100px;
-    border:1px solid black;
+    /*border:1px solid black;*/
     cursor: pointer;
     background-color: #565454;
-    padding: 5px;
+
+}
+.occupied {
+    width: 150px;
+    height: 100px;
+    position: relative;
 }
 img {
     max-width: 100%;
@@ -116,5 +121,37 @@ img {
     margin: 20px;
 }
 .navLink button:hover {
+    background-color: #158115;
+}
+.error {
+    color: white;
+}
+.close {
+    position: absolute;
+    margin: 5px;
+    cursor:pointer;
+    padding: 5px;
+    border-radius: 5px;
+}
+.occupied:hover .close {
+    background-color: lightgrey;
+}
+.request {
+    padding: 5px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(184deg, rgba(0,0,0,0.468312324929972) 0%, rgba(18,18,18,0.9389005602240896) 100%);
+}
+.request button {
+   padding: 3px 5px;
+    height: 25px;
+    width: 40px;
+    background-color: lightgreen;
+    transition: 0.3s ease-in-out;
+}
+.request button:hover {
     background-color: #158115;
 }
